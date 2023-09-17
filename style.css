@@ -10,6 +10,56 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+div p:last-child {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+
+.library {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  margin: 0 auto;
+
+}
+
+@media (min-width: 768px) {
+  .library {
+    width: 30vw;
+    height: 50vh;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .library__card {
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .library__item {
+    flex: 0 0 50%;
+  }
+}
+
+.library__picture {
+  max-width: 250px;
+  height: auto;
 }
